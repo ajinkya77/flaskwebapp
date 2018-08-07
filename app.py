@@ -16,11 +16,11 @@ def index():
     a = json.loads(response.content)
     return render_template('index.html', articles=a['Data'])
 
-# def price():
-#     response = requests.get('https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH&tsyms=USD,EUR')
-#     coinprice = json.loads(response.price)
-#     return render_template('index.html', bitcoinprice=coinprice['Data'])
-#
+def price():
+    response = requests.get('https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH&tsyms=USD,EUR')
+    coinprice = json.loads(response.price)
+    return render_template('index.html', bitcoinprice=coinprice['Data'])
+
 
 if __name__ == '__main__':
     app.run()
