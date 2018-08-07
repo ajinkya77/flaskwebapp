@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+{% for article in articles %}
+    <div class="row">
+
+
+        <div class="container">
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="{{ articles.imageurl }}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">{{ articles.title }}</h5>
+                    <p class="card-text">{{ articles.body }}</p>
+                    <a href="{{ articles.url }}" class="btn btn-primary">Read more</a>
+                </div>
+            </div>
+            <br>
+            </br>
+        </div>
+    </div>
+{% endfor %}
+{% endblock %}
