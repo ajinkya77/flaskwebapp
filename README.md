@@ -1,2 +1,2 @@
 # flaskwebapp
-this repo is of cryptocurrency
+this repo is of cryptocurrency.
